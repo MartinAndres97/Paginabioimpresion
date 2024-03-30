@@ -49,7 +49,7 @@ body {
         .boton-imagen {
             width: 12vw; /* Ancho de la imagen del botón */
             height: 9vh; /* Altura de la imagen del boton */
-            background-image: url("logoweb.png"); /* Inserta imagen del boton */
+            background-image: url("logoweb.PNG"); /* Inserta imagen del boton */
             background-size: contain; /* Ajustar la imagen para cubrir el botón */
             border: none; /* Sin borde */
             cursor: pointer; /* Cambiar cursor al pasar el ratón */
