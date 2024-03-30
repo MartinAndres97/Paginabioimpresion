@@ -1,0 +1,456 @@
+/* estilos.css */
+
+/* Estilos para el cuerpo de la página */
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;/* Define la fuente */
+}
+ /* PAGINA DE INICIO */
+  /* SECCION PRINCIPAL */
+.seccion {
+        width: 100vw; /* Ancho de la ventana del navegador */
+        height: 100vh; /* Altura de la ventana del navegador */
+        background-image: url("Imagenes/3DBioprinting.jpg");/* Agrega imagen */
+        margin: 0; /* Elimina los márgenes predeterminados del contenedor */
+        background-size: cover; /* La imagen cubrirá completamente el área del contenedor */
+        background-position: center; /* La imagen se centrará en el contenedor */
+        background-repeat: repeat; /* Permite repetir la imagen de fondo */
+        position: fixed; /* Establece el posicionamiento fijado */
+        top: 0; /* Posiciona la sección en la parte superior */
+        left: 0; /* Posiciona la sección en la izquierda */
+        bottom: 0; /* Posiciona la sección en la parte inferior */
+        right: 0; /* Posiciona la sección en la derecha*/
+        
+    }
+    .contenedor { /* Contiene las cuatro subsecciones de la pagina */
+        display: flex; /* Utilizar un diseño de flexbox */
+        margin: 0;/* Elimina los márgenes predeterminados del contenedor */
+    }
+    /* Contiene las seccion izquierda superior con una imagen que al seleccionarla lleva a la pagina de inicio */
+    .seccion-izquierdasup {
+        position: fixed; /* Establece el posicionamiento fijado */
+        top: 0; /* Posiciona la sección en la parte superior */
+        left: 0; /* Posiciona la sección en la izquierda */
+        width: 15vw; /* Ancho de la sección izquierda */
+        height: 12vh; /* Altura igual a la altura de la ventana (viewport height) */
+        margin: 0;/* Elimina los márgenes predeterminados del contenedor */
+        float: center; /* Para alinear al centro */
+        background-color:rgba(83, 243, 243, 0);/* Color de fondo para la sección izquierdasup */
+    }
+    /* se genera un boton representado en un logo */
+    .logo {
+            text-align: center; /* Alinea el texto al centro */
+            position: absolute; /* Establece el posicionamiento absoluto */
+            top: 0; /* Posiciona la sección en la parte superior */
+            right: 0; /* Posiciona la sección en la parte derecha */
+        }
+        /* se agrega una imagen al boton */
+        .boton-imagen {
+            width: 12vw; /* Ancho de la imagen del botón */
+            height: 9vh; /* Altura de la imagen del boton */
+            background-image: url("Imagenes/logoweb.png"); /* Inserta imagen del boton */
+            background-size: contain; /* Ajustar la imagen para cubrir el botón */
+            border: none; /* Sin borde */
+            cursor: pointer; /* Cambiar cursor al pasar el ratón */
+            margin-right: 1.5vw; /* Margen derecho */
+            margin-top: 1.5vw; /* Margen superior */
+            
+        }
+        /* Contiene las seccion izquierda inferior con el titulo de la pagina principal */
+        .seccion-izquierdainf {
+            position: fixed; /* Establece el posicionamiento fijado */
+            bottom: 0; /* Posiciona la sección en la parte superior */
+            left: 0; /* Posiciona la sección en la izquierdainf */
+            width: 50vw; /* Ancho de la sección izquierdainf */
+            height: 88vh; /* Altura de la ventana */
+            margin: 0px; /* Ajustar el margen. */
+            background-color:rgba(190, 72, 170, 0); /* Color de fondo para la sección izquierdainf */
+            display: flex;/* Utilizar un diseño de flexbox */
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+        }
+        /* Contiene las el texto para animar */
+        .content {
+            text-align: center; /* Alinea el texto al centro */
+            position: absolute;/* Establece el posicionamiento absoluto */
+            bottom: -100%; /* Empieza desde abajo de la sección */
+            left: 50%; /* Centra horizontalmente */
+            transform: translateX(-50%); /*desplazar un elemento horizontalmente en su contenedor padre*/
+            animation: ascender 1s 1 forwards; /* Nombre de la animación, duración, y repeticiones */
+        }
+        #video {
+            width: 35.6vw; /* Adjust width as needed */
+            height: 20vw; /* Adjust height as needed */
+            background-color: #222; /* Set background behind the video */
+            border: 5px solid #fff; /* Add a white border */
+          }
+        #audio {
+            position: absolute;
+            top: 60vh;
+            left: 0;
+            width: 49vw;
+            height: 3vw;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          }
+          
+          #audio audio {
+            width: 100%;
+            height: 100%;
+          }
+          .gif-container {
+            position: absolute;
+            top: 0;
+            left: 3vw;
+            width: 26.6vw; /* Adjust width as needed */
+            height: 15vw; /* Adjust height as needed */
+            overflow: hidden; /* Para recortar cualquier parte del gif que sobresalga del contenedor */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          }
+          
+          .gif-container img {
+            width: 100%; /* Para que el gif se ajuste al ancho del contenedor */
+            height: auto; /* Para mantener la proporción de aspecto del gif */
+          }
+    @keyframes ascender {
+            0% {
+                bottom: -100%; /* Comienza desde abajo de la sección */
+            }
+            100% {
+                bottom: 27%; /* Se mueve hacia arriba, hasta la parte superior de la sección */
+            }
+        
+        }
+        /* Contiene las seccion derecha inferior con el menu de botones */
+        .seccion-derechasup {
+            position: fixed; /* Establece el posicionamiento fijado */
+            top: 0; /* Posiciona la sección en la parte superior */
+            right: 0; /* Posiciona la sección en la derecha*/
+            width: 83.7vw; /* Ancho de la sección derecha.*/
+            height: 12vh; /* Altura de la ventana. */
+            margin-right: 1.3vw; /* Ajustar el margen derecho según sea necesario */
+            background-color: rgba(243, 168, 83, 0); /* Color de fondo para la sección derecha */
+            z-index: 5;/* Envia al frente el elemento */
+        }
+        .mi-boton { /* Boton menu principal*/
+            background-color: #042a5d; /* Color de fondo */
+            border: none; /* Sin borde */
+            color: white; /* Color del texto */
+            padding: 0.5vw 0.5vw; /* Relleno */
+            text-align: center; /* Alineación del texto */
+            text-decoration: none; /* Sin decoración de texto */
+            display: inline-block; /* Visualización como bloque en línea */
+            font-size: 1vw; /* Tamaño de fuente */
+            font-weight: bold;/* tipo de estilo */
+            margin: 1vw 0.05vw; /* Márgenes */
+            cursor: pointer; /* Cambiar cursor al pasar el ratón */
+            border-radius: 8px; /* Bordes redondeados */
+            margin-right: 1.5vw; /* Márgen especifica */
+            margin-top: 1.5vw;/* Márgen especifica */
+        }
+        
+        .mi-boton:hover {/* Cambia de color al pasar el cursor */
+            background-color: #6db6e7; /* Cambiar color de fondo al pasar el ratón */
+        } 
+       
+        .boton3 {/* Boton pagina 3 */
+            background-color: #042a5d; /* Color de fondo */
+            border: none; /* Sin borde */
+            color: white; /* Color del texto */
+            padding: 0.5vw 0.5vw; /* Relleno */
+            text-align: center; /* Alineación del texto */
+            text-decoration: none; /* Sin decoración de texto */
+            display: block; /* Visualización como bloque*/
+            font-size: 1vw; /* Tamaño de fuente */
+            font-weight: bold;/* tipo de estilo */
+            margin: 1vw 0vw; /* Márgenes */
+            cursor: pointer; /* Cambiar cursor al pasar el ratón */
+            border-radius: 8px; /* Bordes redondeados */
+            margin-right: 1.5vw;/* Márgen especifica */
+            margin-top: 1.5vw;/* Márgen especifica */
+            margin-bottom: 5vw;/* Márgen especifica */
+        }
+        .boton3:hover {
+            background-color: #f0f0f0; /* Cambia el color de fondo al pasar el ratón */
+        }
+        .menu-vertical {
+            position: absolute; /* Establecer posición absoluta */
+            top: 25vh; /* Posición desde la parte superior */
+            left: 25vw; /* Posición desde el lado izquierdo */
+            z-index: 999; /* Valor alto para colocar el menú sobre otros elementos */
+        }
+        
+    
+         
+        .seccion-derechainf {
+            position: fixed; /* Establece el posicionamiento fijado */
+            bottom: 0; /* Posiciona la sección en la parte inferior */
+            right: 0; /* Posiciona la sección en la derecha */
+            width: 50vw; /* Ancho de la sección derecha (100% del ancho de la pantalla menos el ancho de la sección izquierda) */
+            margin: 0px; /* Ajustar el margen izquierdo según sea necesario */
+            background-color: rgba(39, 102, 49, 0); /* Color de fondo para la sección derecha */
+            height: 88vh; /* Permitir que el contenedor crezca según sea necesario */
+            
+        }
+        .seccion-definicion {
+            position: fixed; /* Establece el posicionamiento fijado */
+            bottom: 0; /* Posiciona la sección en la parte inferior */
+            right: 0; /* Posiciona la sección en la derecha */
+            top: 20vh; /* Posiciona la sección en la parte superior */
+            left: 45vw; /* Posiciona la sección en la izquierda */
+            width: 50vw; /* Ancho de la sección derecha (100% del ancho de la pantalla menos el ancho de la sección izquierda) */
+            height: 70vh; /* Altura igual a la altura de la ventana (viewport height) */
+            margin-top: 0px; /* Ajustar el margen izquierdo según sea necesario */
+            margin-left: 0px;/* Márgen especifica */
+            margin-bottom: 15vh;/* Márgen especifica */
+            margin-right: 4vw;/* Márgen especifica */
+            background-color: rgba(0, 0, 0, 0.85); /* Color de fondo para la sección derecha */
+        
+        }
+        .definicion {
+            text-align: justify; /* Alinea el texto al centro */
+            animation: centrar 2s 1 forwards; /* Nombre de la animación, duración, y repeticiones */
+            width: 100%;/* Define el ancho */
+            height: 100vh;/* Define el alto */
+            position: relative;/* Establece el posicionamiento relativo */
+            overflow: hidden; /* Para ocultar el texto que se desplazará fuera de los límites */     
+        }
+        .desplazar {
+            position: absolute;/* Establece el posicionamiento absoluto */
+            right: 0; /* Posición inicial a la derecha */
+            animation: desplazarCentro 2s forwards; /* Aplica la animación */
+          }
+          
+          @keyframes desplazarCentro {
+            from {
+              right: 100%; /* Posición inicial (comienza fuera del contenedor a la derecha) */
+            }
+            to {
+              right: 0%; /* Posición final (centrado en el contenedor) */
+            }
+          }
+
+     /* PAGINA 2 a la 6*/
+.seccion2 {
+       
+        background-image: url("Imagenes/bioprint.PNG"); /* Ruta de la imagen de fondo */
+        margin: 0; /* Eliminar márgenes predeterminados del cuerpo */
+        background-size: cover; /* Cubrir toda la pantalla */
+        background-position: center;/* Centrar la imagen */
+        position: fixed; /* Posicionamiento fijado */
+        top: 0; /* Posiciona la sección en la parte superior */
+        left: 0; /* Posiciona la sección en la izquierda */
+        bottom: 0; /* Posiciona la sección en la parte inferior */
+        right: 0; /* Posiciona la sección en la derecha */
+        background-repeat: repeat; /* Repetir la imagen */
+        height: 100vh; /* Altura del cuerpo igual a la altura de la ventana (viewport height) */
+    
+    }
+           
+   .seccion-derecha {
+        position: fixed; /* Establece el posicionamiento fijado */
+        bottom: 0; /* Posiciona la sección en la parte inferior */
+        right: 0; /* Posiciona la sección en la derecha */
+        top: 0; /* Posiciona la sección en la parte superior */
+        right: 0; /* Posiciona la sección en la izquierda */
+        width: 70vw; /* Ancho de la sección derecha  */
+        height: 100vh; /* Altura igual a la altura de la ventana (viewport height) */
+        background-color: rgba(8, 28, 143, 0); /* Color de fondo para la sección derecha */
+        overflow-y: auto; /* Agrega desplazamiento vertical */
+        z-index: 3;/* Nivel de posicionamiento*/
+    }
+    .seccion-contenido {
+        position: fixed; /* Establece el posicionamiento fijado */
+        bottom: 0; /* Posiciona la sección en la parte inferior */
+        right: 0; /* Posiciona la sección en la derecha */
+        top: 14vh; /* Posiciona la sección en la parte superior */
+        left: 30vw; /* Posiciona la sección en la izquierda */
+        width: 68vw; /* Ancho de la sección derecha*/
+        height: 84vh; /* Altura de la ventana */
+        margin-top: 0px; /* Ajustar el margen superior según sea necesario */
+        margin-left: 0px;/* Ajustar el margen izquierdo según sea necesario */
+        margin-bottom: 4vh;/* Ajustar el margen inferior según sea necesario */
+        margin-right: 4vw;/* Ajustar el margen derecho según sea necesario */
+        background-color: rgba(0, 0, 0, 0.75); /* Color de fondo para la sección derecha */
+        z-index: -1;/* Envia atras */
+    }
+    .imagenpag3 {
+        
+        width: 50vw; /* Ancho de la imagen */
+        height: auto; /* Altura automática para mantener la proporción original */
+        border-radius: 5px; /* Borde redondeado */
+        position: flex;
+        bottom: 25%; /* Empieza desde abajo de la sección */
+        left: 0px; /* Centra horizontalmente */
+        display: block; /* Hace que la imagen sea un bloque para poder establecer márgenes automáticos */
+        margin: auto; /* Establece márgenes automáticos para centrar la imagen horizontalmente */
+        margin-top: 5px; /* Margen superior */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Añade un sombreado */
+    }
+    .imagenes {
+        position: relative;
+        float: left;
+        top: 0;
+        box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
+        margin-right: 1vw;
+        margin-bottom: 1vw;
+    }
+
+        
+    .seccion-izquierda {
+        position: fixed; /* Establece el posicionamiento fijado */
+        bottom: 0; /* Posiciona la sección en la parte superior */
+        left: 0; /* Posiciona la sección en la izquierda */
+        width: 30vw; /* Ancho de la sección izquierda */
+        height: 75vh; /* Altura de la ventana */
+        margin: 0px; /* Ajustar el margenrd según sea necesario */
+        background-color:rgba(109, 5, 5, 0); /* Color de fondo para la sección izquierda */
+        display: flex; /* Utilizar un diseño de flexbox */
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+    }
+    .contenido {
+        margin-top: 15vh; /* Ajusta según la altura de la sección 2 */
+    }   
+
+    .boton-final {
+        margin-top: auto; /* Mover el botón hacia abajo (al final de la página) */
+        position: sticky; /* Establece el posicionamiento fijo */
+        left: 50%; /* Lo coloca en el centro horizontal */
+        transform: translateX(-50%); /* Lo centra horizontalmente */
+        background-color: #042a5d; /* Color de fondo */
+        border-width: 2px; /* Ancho del borde */
+        border-style: solid; /* Estilo del borde */
+        border-color: #000; /* Color del borde */
+        border-radius: 5px; /* Radio de borde para esquinas redondeadas */
+        color: white; /* Color del texto */
+        padding: 10px 10px; /* Relleno */
+        text-align: center; /* Alineación del texto */
+        text-decoration: none; /* Sin decoración de texto */
+        display: inline-block; /* Visualización como bloque en línea */
+        font-size: 14px; /* Tamaño de fuente */
+        font-weight: bold;/* Estilo de fuente */
+        cursor: pointer; /* Cambiar cursor al pasar el ratón */
+        border-radius: 8px; /* Bordes redondeados */
+    }
+    .boton-final:hover {
+        background-color: #6db6e7; /* Cambiar color de fondo al pasar el ratón */
+    }  
+
+/* Estilos para el encabezado */
+h1 {
+    color: #ffffff;/* Color del texto */
+    font-size: 4vw; /* Tamaño de fuente */
+    text-align: center;/* Alineación del texto */
+    margin-left: 0px; /* Márgenes */
+    margin-top: 0px; /* Márgenes */
+    margin-bottom: 0px; /* Márgenes */
+    margin-right: 0px; /* Márgenes */
+    cursor: pointer; /* Cambiar cursor al pasar el ratón */
+    border-radius: 8px; /* Bordes redondeados */
+    }
+    h2 {
+        color: #eb2c2c;/* Color del texto */
+        font-size: 3vw; /* Tamaño de fuente */
+        text-align: center;/* Alineación del texto */
+        margin-top: 2vw; /* Margen superior */
+        margin-bottom: 2vw; /* Margen inferior */
+        margin-left: 22vw; /* Margen izquierdo */
+        margin-right: 22vw; /* Margen derecho */
+        cursor: pointer; /* Cambiar cursor al pasar el ratón */
+        border-radius: 8px; /* Bordes redondeados */
+        text-shadow: 2px 2px #000000;/* Color del borde */
+        }
+        h3 {
+            color: #2541c2;/* Color del texto */
+            font-size: 2vw; /* Tamaño de fuente */
+            text-align: left;/* Alineación del texto */
+            margin-left: 2vw; /* Márgenes */
+            margin-top: 3vw; /* Márgenes */
+            margin-bottom: 0px; /* Márgenes */
+            margin-right: 0.5vw; /* Márgenes */
+            cursor: pointer; /* Cambiar cursor al pasar el ratón */
+            border-radius: 8px; /* Bordes redondeados */
+            text-shadow: 1px 1px #ffffff;/* Color del borde */
+            }
+            h4 {
+                color: #f7e6e6;/* Color del texto */
+                font-size: 16 px; /* Tamaño de fuente */
+                text-align: justify;/* Alineación del texto */
+                margin-left: 5px; /* Márgenes */
+                margin-top: 5px; /* Márgenes */
+                font-weight: normal; /* Estilo de texto */
+                margin-bottom: 20px; /* Márgenes */
+                margin-right: 5px; /* Márgenes */
+                cursor: pointer; /* Cambiar cursor al pasar el ratón */
+                border-radius: 8px; /* Bordes redondeados */
+                text-shadow: 2px 2px #000000;/* Color del borde */
+                }
+                h5 {
+                    color: #ee6745;/* Color del texto */
+                    font-size: 10 px; /* Tamaño de fuente */
+                    text-align: center;/* Alineación del texto */
+                    margin-left: 5px; /* Márgenes */
+                    margin-top: 5px;/* Márgenes */
+                    font-weight: bold;/* Estilo de texto */
+                    margin-bottom: 20px;/* Márgenes */
+                    margin-right: 5px;/* Márgenes */
+                    cursor: pointer; /* Cambiar cursor al pasar el ratón */
+                    border-radius: 8px; /* Bordes redondeados */
+                    text-shadow: 1px 1px #ffffff00;/* Color del borde */
+                    }
+                .uno {
+                    position: relative;/* Posicion relativa */
+                    max-width:65vw;/* Tamano maximo */
+                    left: 10px;/* Posicion izquierda */
+                    font-size: 16px;/* Tamaño de fuente */
+                    font-weight: normal;/* Estilo de texto */
+                    text-align: justify;/* Alineación del texto */
+                    color:#ffffff;/* Color del texto */
+                    text-shadow: 1px 1px #000000;/* Color del borde */
+                }
+                .footer {
+                    color: #ffffff;/* Color del texto */
+                    text-align: center;/* Alineación del texto */
+                    margin-left: 5px; /* Márgenes */
+                    margin-top: 5px;/* Márgenes */
+                    font-weight: bold;/* Estilo de texto */
+                    margin-bottom: 5px;/* Márgenes */
+                    margin-right: 5px;/* Márgenes */
+                    cursor: pointer; /* Cambiar cursor al pasar el ratón */
+                    border-radius: 8px; /* Bordes redondeados */
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    }
+                   
+
+
+/* Estilos para los párrafos */
+p {
+    line-height: 1.25;/* Interlineado */
+    margin-top: 1vh; /* Margen superior */
+    margin-bottom: 2vh; /* Margen inferior  */
+    margin-left: 1vh; /* Margen izquierdo*/
+    margin-right: 2vh; /* Margen derecho */
+    text-align: justify;/* Alineación del texto */
+}
+
+/* Estilos para enlaces */
+a {
+    color: #ffffff;/* Color*/
+    text-decoration: underline;/*Decoracion */
+    text-align: center;/* Alineación del texto */
+}
+
+/* Estilos para enlaces al pasar el ratón */
+a:hover {
+    text-decoration: underline;
+    color: #ff0505;
+}
