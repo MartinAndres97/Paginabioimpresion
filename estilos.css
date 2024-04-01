@@ -876,7 +876,7 @@ h5 {
     width: 26.6vw; /* Adjust width as needed */
     height: 15vw; /* Adjust height as needed */
     position: absolute;
-    top: 8vh;
+    top: 4vh;
     left: 68vw;
   }
 @keyframes ascender {
