@@ -73,7 +73,7 @@ body {
                 }
                 .seccion-menu {
                     position: fixed; /* Establece el posicionamiento fijado */
-                    top: 12vh; /* Posiciona la sección en la parte superior */
+                    top: 15vh; /* Posiciona la sección en la parte superior */
                     left: 5vh; /* Posiciona la sección en la izquierda */
                     width: 5vw; /* Ancho de la sección izquierda */
                     height: 5vw; /* Altura igual a la altura de la ventana (viewport height) */
