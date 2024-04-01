@@ -773,16 +773,16 @@ h1 {
     font-size: 5vw; /* Tamaño de fuente */
 }
 h2 {
-    font-size: 3.8vw; /* Tamaño de fuente */
+    font-size: 4.5vw; /* Tamaño de fuente */
 }
 h3 {
-    font-size: 3.5vw; /* Tamaño de fuente */
+    font-size: 4vw; /* Tamaño de fuente */
 }
 h4 {
-    font-size: 2.5vw; /* Tamaño de fuente */
+    font-size: 3.5vw; /* Tamaño de fuente */
 }
 h5 {
-    font-size: 1.8vw; /* Tamaño de fuente */
+    font-size: 2.5vw; /* Tamaño de fuente */
 }
 #audio {
     z-index: 9999;
