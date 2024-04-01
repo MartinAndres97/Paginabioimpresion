@@ -752,7 +752,7 @@ h5 {
 }
 .seccion-izquierdainf {
     width: 100vw; /* Ancho fijo del botón */
-    height: 50vh; /* Altura fija del botón */
+    height: 35vh; /* Altura fija del botón */
     z-index: 9998;
     position: absolute; 
     top: 0;
@@ -762,7 +762,7 @@ h5 {
     position: fixed; /* Establece el posicionamiento fijado */
     bottom: 0; /* Posiciona la sección en la parte inferior */
     right: 0; /* Posiciona la sección en la derecha */
-    top: 50vh; /* Posiciona la sección en la parte superior */
+    top: 35vh; /* Posiciona la sección en la parte superior */
     left: 0vw; /* Posiciona la sección en la izquierda */
     width: 100vw; /* Ancho de la sección derecha (100% del ancho de la pantalla menos el ancho de la sección izquierda) */
     height: 50vh; /* Altura igual a la altura de la ventana (viewport height) */
