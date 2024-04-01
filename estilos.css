@@ -131,7 +131,7 @@ body {
             width: 50vw; /* Ancho de la sección izquierdainf */
             height: 88vh; /* Altura de la ventana */
             margin: 0px; /* Ajustar el margen. */
-            background-color:rgb(190, 72, 170, 0); /* Color de fondo para la sección izquierdainf */
+            background-color:rgba(190, 72, 170, 0); /* Color de fondo para la sección izquierdainf */
             display: flex;/* Utilizar un diseño de flexbox */
             justify-content: center; /* Centra horizontalmente */
             align-items: center; /* Centra verticalmente */
@@ -595,7 +595,7 @@ a:hover {
 }
 .seccion-izquierdainf {
     width: 100vw; /* Ancho fijo del botón */
-    height: 35vh; /* Altura fija del botón */
+    height: 50vh; /* Altura fija del botón */
     z-index: 9998;
     position: absolute; 
     top: 0;
@@ -605,11 +605,11 @@ a:hover {
     position: fixed; /* Establece el posicionamiento fijado */
     bottom: 0; /* Posiciona la sección en la parte inferior */
     right: 0; /* Posiciona la sección en la derecha */
-    top: 35vh; /* Posiciona la sección en la parte superior */
+    top: 50vh; /* Posiciona la sección en la parte superior */
     left: 0vw; /* Posiciona la sección en la izquierda */
     width: 100vw; /* Ancho de la sección derecha (100% del ancho de la pantalla menos el ancho de la sección izquierda) */
-    height: 70vh; /* Altura igual a la altura de la ventana (viewport height) */
-    background-color: rgba(0, 0, 0, 0.85); /* Color de fondo para la sección derecha */
+    height: 48vh; /* Altura igual a la altura de la ventana (viewport height) */
+    background-color: rgba(255, 0, 242, 0); /* Color de fondo para la sección derecha */
     z-index: 3;
     overflow-y: auto; /* Agrega desplazamiento vertical */
 
@@ -646,7 +646,7 @@ a:hover {
 }
 
 h1 {
-    font-size: 5.5vw; /* Tamaño de fuente */
+    font-size: 8vw; /* Tamaño de fuente */
 }
 h2 {
     font-size: 4.5vw; /* Tamaño de fuente */
@@ -668,7 +668,7 @@ h5 {
 }
 .seccion-izquierda {
     width: 98vw; /* Ancho fijo del botón */
-    height: 22vh; /* Altura fija del botón */
+    height: 12vh; /* Altura fija del botón */
     z-index: 9998;
     position: absolute; 
     top: 0;
@@ -679,7 +679,7 @@ h5 {
     position: fixed; /* Establece el posicionamiento fijado */
     bottom: 0; /* Posiciona la sección en la parte inferior */
     right: 0; /* Posiciona la sección en la derecha */
-    top: 20vh; /* Posiciona la sección en la parte superior */
+    top: 15vh; /* Posiciona la sección en la parte superior */
     left: 0; /* Posiciona la sección en la izquierda */
     width: 98vw; /* Ancho de la sección derecha*/
     height: 78vh; /* Altura de la ventana */
@@ -688,12 +688,16 @@ h5 {
     position: fixed; /* Establece el posicionamiento fijado */
     bottom: 0; /* Posiciona la sección en la parte inferior */
     right: 0; /* Posiciona la sección en la derecha */
-    top: 8vh; /* Posiciona la sección en la parte superior */
+    top: 12vh; /* Posiciona la sección en la parte superior */
     left: 0; /* Posiciona la sección en la izquierda */
     width: 100vw; /* Ancho de la sección derecha*/
-    height: 78vh; /* Altura de la ventana */
+    height: 84vh; /* Altura de la ventana */
     z-index: 9998;
 }
+#video {
+    width: 75vw; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+  }
 .imagenes {
     width:20vw;
     height:auto;
@@ -718,10 +722,10 @@ h5 {
         bottom: -100%; /* Comienza desde abajo de la sección */
     }
     100% {
-        bottom: 60%; /* Se mueve hacia arriba, hasta la parte superior de la sección */
+        bottom: 2%; /* Se mueve hacia arriba, hasta la parte superior de la sección */
     }
 }
-    .boton-final { 
+.boton-final { 
     font-size: 6vw;
 } 
 }
@@ -748,7 +752,7 @@ h5 {
 }
 .seccion-izquierdainf {
     width: 100vw; /* Ancho fijo del botón */
-    height: 35vh; /* Altura fija del botón */
+    height: 50vh; /* Altura fija del botón */
     z-index: 9998;
     position: absolute; 
     top: 0;
@@ -758,18 +762,17 @@ h5 {
     position: fixed; /* Establece el posicionamiento fijado */
     bottom: 0; /* Posiciona la sección en la parte inferior */
     right: 0; /* Posiciona la sección en la derecha */
-    top: 35vh; /* Posiciona la sección en la parte superior */
+    top: 50vh; /* Posiciona la sección en la parte superior */
     left: 0vw; /* Posiciona la sección en la izquierda */
     width: 100vw; /* Ancho de la sección derecha (100% del ancho de la pantalla menos el ancho de la sección izquierda) */
-    height: 70vh; /* Altura igual a la altura de la ventana (viewport height) */
-    background-color: rgba(0, 0, 0, 0.85); /* Color de fondo para la sección derecha */
+    height: 50vh; /* Altura igual a la altura de la ventana (viewport height) */
     z-index: 3;
     overflow-y: auto; /* Agrega desplazamiento vertical */
 
 }
 #video {
-    width: 53.4vw; /* Adjust width as needed */
-    height: 30vw; /* Adjust height as needed */
+    width: 75vw; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
   }
 .menu-content {
     min-width: 80vw;
@@ -799,7 +802,7 @@ h5 {
 }
 
 h1 {
-    font-size: 5vw; /* Tamaño de fuente */
+    font-size: 8vw; /* Tamaño de fuente */
 }
 h2 {
     font-size: 4.5vw; /* Tamaño de fuente */
@@ -827,7 +830,7 @@ h5 {
 }
 .seccion-izquierda {
     width: 98vw; /* Ancho fijo del botón */
-    height: 22vh; /* Altura fija del botón */
+    height: 12vh; /* Altura fija del botón */
     z-index: 9998;
     position: absolute; 
     top: 0;
@@ -838,7 +841,7 @@ h5 {
     position: fixed; /* Establece el posicionamiento fijado */
     bottom: 0; /* Posiciona la sección en la parte inferior */
     right: 0; /* Posiciona la sección en la derecha */
-    top: 22vh; /* Posiciona la sección en la parte superior */
+    top: 15vh; /* Posiciona la sección en la parte superior */
     left: 0; /* Posiciona la sección en la izquierda */
     width: 98vw; /* Ancho de la sección derecha*/
     height: 78vh; /* Altura de la ventana */
@@ -848,7 +851,7 @@ h5 {
     position: fixed; /* Establece el posicionamiento fijado */
     bottom: 0; /* Posiciona la sección en la parte inferior */
     right: 0; /* Posiciona la sección en la derecha */
-    top: 8vh; /* Posiciona la sección en la parte superior */
+    top: 12vh; /* Posiciona la sección en la parte superior */
     left: 0; /* Posiciona la sección en la izquierda */
     width: 100vw; /* Ancho de la sección derecha*/
     height: 78vh; /* Altura de la ventana */
@@ -881,18 +884,13 @@ h5 {
         bottom: -100%; /* Comienza desde abajo de la sección */
     }
     100% {
-        bottom: 60%; /* Se mueve hacia arriba, hasta la parte superior de la sección */
+        bottom: 3%; /* Se mueve hacia arriba, hasta la parte superior de la sección */
     }
 }
 .boton-final { 
     font-size: 7vw;
 } 
-.contenedor {
-    transition: opacity 0.5s ease; /* Transición de opacidad */
-  } 
-.seccion-derecha:hover + .seccion-izquierda {
-    opacity: 0; /* Hacer que la sección superior desaparezca cuando el mouse pase sobre la sección inferior */
-  }
+
 }
 @media only screen and (min-width: 1200px) and (max-width: 1300px) {
     .seccion-menu {
@@ -972,8 +970,9 @@ h5 {
     #audio {
        z-index: 9999;
        position: absolute;
-       top: 80vh;
-       left:10vw;
+       top: 85vh;
+       left:40vw;
+       width: 55vw;
     }
     #video {
         z-index: 9999;
