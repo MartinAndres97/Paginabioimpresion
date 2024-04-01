@@ -581,6 +581,10 @@ a:hover {
         width: 10vw; /* Ancho fijo del botón */
         height: 10vw; /* Altura fija del botón */
     }
+       .menu-btn {
+        width: 10vw; /* Ancho de la imagen del botón */
+        height: 10vw; /* Altura de la imagen del boton */
+    }
 
 .seccion-derechainf {
     width: 100vw; /* Ancho de la sección derecha (100% del ancho de la pantalla menos el ancho de la sección izquierda) */
@@ -723,6 +727,10 @@ h5 {
     .seccion-menu {
         width: 10vw; /* Ancho fijo del botón */
         height: 10vw; /* Altura fija del botón */
+    }
+       .menu-btn {
+        width: 10vw; /* Ancho de la imagen del botón */
+        height: 10vw; /* Altura de la imagen del boton */
     }
 
 .seccion-derechainf {
