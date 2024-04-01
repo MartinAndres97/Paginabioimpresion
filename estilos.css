@@ -11,7 +11,7 @@ body {
 .seccion {
         width: 100vw; /* Ancho de la ventana del navegador */
         height: 100vh; /* Altura de la ventana del navegador */
-        background-image: url("3DBioprinting.jpg");/* Agrega imagen */
+        background-image: url("Imagenes/3DBioprinting.jpg");/* Agrega imagen */
         margin: 0; /* Elimina los márgenes predeterminados del contenedor */
         background-size: cover; /* La imagen cubrirá completamente el área del contenedor */
         background-position: center; /* La imagen se centrará en el contenedor */
@@ -36,7 +36,7 @@ body {
         height: 12vh; /* Altura igual a la altura de la ventana (viewport height) */
         margin: 0;/* Elimina los márgenes predeterminados del contenedor */
         float: center; /* Para alinear al centro */
-        background-color:rgba(83, 243, 243, 0);/* Color de fondo para la sección izquierdasup */
+        background-color:rgb(83, 243, 243);/* Color de fondo para la sección izquierdasup */
     }
     /* se genera un boton representado en un logo */
     .logo {
@@ -49,7 +49,7 @@ body {
         .boton-imagen {
             width: 27vh; /* Ancho de la imagen del botón */
             height: 9vh; /* Altura de la imagen del boton */
-            background-image: url("logoweb.PNG"); /* Inserta imagen del boton */
+            background-image: url("Imagenes/logoweb.png"); /* Inserta imagen del boton */
             background-size: cover; /* Ajustar la imagen para cubrir el botón */
             background-repeat: no-repeat;
             border: none; /* Sin borde */
@@ -61,21 +61,32 @@ body {
                 /* Estilos del botón */
                 .menu-btn {
                     position: sticky; /* Establece el posicionamiento fijo */
-                    width: 3vw; /* Ancho de la imagen del botón */
-                    height: 3vw; /* Altura de la imagen del boton */
-                    background-image: url("menu.PNG"); /* Inserta imagen del boton */
-                    background-size: contain; /* Ajustar la imagen para cubrir el botón */
+                    width: 10vw; /* Ancho de la imagen del botón */
+                    height: 10vw; /* Altura de la imagen del boton */
+                    background-image: url("Imagenes/menu.PNG"); /* Inserta imagen del boton */
+                    background-size: cover; /* Ajustar la imagen para cubrir el botón */
                     background-color: none;
                     padding: 0px 0px;
                     border: none;
                     cursor: pointer;
         
                 }
+                .seccion-menu {
+                    position: fixed; /* Establece el posicionamiento fijado */
+                    top: 12vh; /* Posiciona la sección en la parte superior */
+                    left: 5vh; /* Posiciona la sección en la izquierda */
+                    width: 5vw; /* Ancho de la sección izquierda */
+                    height: 5vw; /* Altura igual a la altura de la ventana (viewport height) */
+                    margin: 0;/* Elimina los márgenes predeterminados del contenedor */
+                    float: center; /* Para alinear al centro */
+                    background-color:rgb(0, 0, 0);/* Color de fondo para la sección izquierdasup */
+                    z-index: 9999;
+                }
                 /* Estilos del contenedor del menú */
                 .menu {
                     position: absolute;
-                    top: 1.5vw;
-                    left: 1.5vw;
+                    top: 0;
+                    left: 0;
                     display: inline-block;
                     z-index: 9999;
                 }
@@ -85,7 +96,7 @@ body {
                     display: none;
                     position: absolute;
                     background-color: #a4b4fa;
-                    min-width: 300px;
+                    min-width: 20vw;
                     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                     z-index: 1000;
                 }
@@ -96,7 +107,7 @@ body {
                 /* Estilos de los enlaces dentro del menú */
                 .menu-content a {
                     color: black;
-                    font-size: 1vw; /* Tamaño de fuente */
+                    font-size: 1.5vw; /* Tamaño de fuente */
                     padding: 12px 16px;
                     font-weight: bold; 
                     display: block;
@@ -120,7 +131,7 @@ body {
             width: 50vw; /* Ancho de la sección izquierdainf */
             height: 88vh; /* Altura de la ventana */
             margin: 0px; /* Ajustar el margen. */
-            background-color:rgba(190, 72, 170, 0); /* Color de fondo para la sección izquierdainf */
+            background-color:rgb(190, 72, 170); /* Color de fondo para la sección izquierdainf */
             display: flex;/* Utilizar un diseño de flexbox */
             justify-content: center; /* Centra horizontalmente */
             align-items: center; /* Centra verticalmente */
@@ -277,7 +288,7 @@ body {
      /* PAGINA 2 a la 6*/
 .seccion2 {
        
-        background-image: url("bioprint.PNG"); /* Ruta de la imagen de fondo */
+        background-image: url("Imagenes/bioprint.PNG"); /* Ruta de la imagen de fondo */
         margin: 0; /* Eliminar márgenes predeterminados del cuerpo */
         background-size: cover; /* Cubrir toda la pantalla */
         background-position: center;/* Centrar la imagen */
@@ -440,7 +451,7 @@ body {
         text-align: center; /* Alineación del texto */
         text-decoration: none; /* Sin decoración de texto */
         display: inline-block; /* Visualización como bloque en línea */
-        font-size: 14px; /* Tamaño de fuente */
+        font-size: 2vw; /* Tamaño de fuente */
         font-weight: bold;/* Estilo de fuente */
         cursor: pointer; /* Cambiar cursor al pasar el ratón */
         border-radius: 8px; /* Bordes redondeados */
@@ -566,7 +577,7 @@ a:hover {
     .boton-imagen {
         display: none; /* Ocultar el menú en dispositivos móviles */
     }
-    .menu-btn {
+    .seccion-menu {
         width: 10vw; /* Ancho fijo del botón */
         height: 10vw; /* Altura fija del botón */
     }
@@ -611,8 +622,8 @@ a:hover {
   }
   .menu {
     position: absolute;
-    top: 5vw;
-    left: 5vw;
+    top: 0;
+    left: 0;
     display: inline-block;
     z-index: 9999;
 }
@@ -655,6 +666,7 @@ h5 {
     position: absolute; 
     top: 0;
     left: 0;
+    z-index: 9997;
 }
 .seccion-contenido {
     position: fixed; /* Establece el posicionamiento fijado */
@@ -664,16 +676,16 @@ h5 {
     left: 0; /* Posiciona la sección en la izquierda */
     width: 98vw; /* Ancho de la sección derecha*/
     height: 78vh; /* Altura de la ventana */
-
 }
 .seccion-derecha {
     position: fixed; /* Establece el posicionamiento fijado */
     bottom: 0; /* Posiciona la sección en la parte inferior */
     right: 0; /* Posiciona la sección en la derecha */
-    top: 10vh; /* Posiciona la sección en la parte superior */
+    top: 8vh; /* Posiciona la sección en la parte superior */
     left: 0; /* Posiciona la sección en la izquierda */
     width: 100vw; /* Ancho de la sección derecha*/
     height: 78vh; /* Altura de la ventana */
+    z-index: 9998;
 }
 .imagenes {
     width:20vw;
@@ -708,7 +720,7 @@ h5 {
     .boton-imagen {
         display: none; /* Ocultar el menú en dispositivos móviles */
     }
-    .menu-btn {
+    .seccion-menu {
         width: 10vw; /* Ancho fijo del botón */
         height: 10vw; /* Altura fija del botón */
     }
@@ -753,8 +765,8 @@ h5 {
   }
   .menu {
     position: absolute;
-    top: 5vw;
-    left: 5vw;
+    top: 0;
+    left: 0;
     display: inline-block;
     z-index: 9999;
 }
@@ -803,12 +815,13 @@ h5 {
     position: absolute; 
     top: 0;
     left: 0;
+    z-index: 9997;
 }
 .seccion-contenido {
     position: fixed; /* Establece el posicionamiento fijado */
     bottom: 0; /* Posiciona la sección en la parte inferior */
     right: 0; /* Posiciona la sección en la derecha */
-    top: 20vh; /* Posiciona la sección en la parte superior */
+    top: 22vh; /* Posiciona la sección en la parte superior */
     left: 0; /* Posiciona la sección en la izquierda */
     width: 98vw; /* Ancho de la sección derecha*/
     height: 78vh; /* Altura de la ventana */
@@ -818,11 +831,15 @@ h5 {
     position: fixed; /* Establece el posicionamiento fijado */
     bottom: 0; /* Posiciona la sección en la parte inferior */
     right: 0; /* Posiciona la sección en la derecha */
-    top: 10vh; /* Posiciona la sección en la parte superior */
+    top: 8vh; /* Posiciona la sección en la parte superior */
     left: 0; /* Posiciona la sección en la izquierda */
     width: 100vw; /* Ancho de la sección derecha*/
     height: 78vh; /* Altura de la ventana */
+    z-index: 9998;
 }
+.seccion-derecha:hover + .seccion-izquierda {
+    opacity: 0; /* Hacer que la sección superior desaparezca cuando el mouse pase sobre la sección inferior */
+  }
 .imagenes {
     width:35vw;
     height:auto;
@@ -852,11 +869,16 @@ h5 {
 }
 .boton-final { 
     font-size: 4vw;
-}  
-    
+} 
+.contenedor {
+    transition: opacity 0.5s ease; /* Transición de opacidad */
+  } 
+.seccion-derecha:hover + .seccion-izquierda {
+    opacity: 0; /* Hacer que la sección superior desaparezca cuando el mouse pase sobre la sección inferior */
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1300px) {
-    .menu-btn {
+    .seccion-menu {
         width: 8vw; /* Ancho fijo del botón */
         height: 8vw; /* Altura fija del botón */
     }
@@ -895,8 +917,8 @@ h5 {
     }
     .menu {
         position: absolute;
-        top: 5vw;
-        left: 5vw;
+        top: 0;
+        left: 0;
         display: inline-block;
         z-index: 9999;
     }
@@ -926,7 +948,7 @@ h5 {
        z-index: 9999;
        position: absolute;
        top: 80vh;
-       left:40vw;
+       left:10vw;
     }
     #video {
         z-index: 9999;
@@ -995,4 +1017,5 @@ h5 {
         top: 80vh;
         left:45vw;
      }
+
 }  
