@@ -10,43 +10,85 @@
 </head>
 <body>
  <div class="seccion"><!-- seccion principal-->
-    <div class="contenedor"><!-- contenedor principa -->
+    <div class="contenedor"><!-- contenedor principal -->
+        <audio controls id="audio">
+            <source src="bioaundio.mp3" type="audio/mp3">
+            Tu navegador no soporta el elemento de audio.
+          </audio>
     <div class="seccion-izquierdasup"><!-- seccion izquierda -->
         <div class="logo"><!-- insertar logo -->
             <a href="index.html" target="_self"><button class="boton-imagen"></button></a><!-- envia al inicio -->
         </div>
     </div>
     <div class="seccion-izquierdainf"><!-- seccion inzquierda -->
+        <div class="menu">
+            <button class="menu-btn"></button>
+            <div class="menu-content">
+                <a href="index.html" target="_self">INICIO</a>
+                <a href="componentes.html" target="_self">COMPONENTES</a>
+                <a href="tecnicas.html" target="_self">TÉCNICAS</a>
+                <a href="tejidos.html" target="_self">TEJIDOS</a>
+                <a href="sectores.html" target="_self">SECTORES</a>
+                <a href="referencias.html" target="_self">REFERENCIAS</a>
+            </div>
+        </div>
         <div class="content"><!-- contenedor de la seccion -->
             <video id="video" controls>
-                <source src="bioprintingvideo.mp4" type="video/mp4">
+                <source src="3dBioprinting.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
             <h1><a href="https://www.youtube.com/watch?v=uHbn7wLN_3k&t=11s" target="_blank">BIOIMPRESIÓN 3D</a></h1><!-- titular de mayor tamaño -->
         </div>
     </div>
-    <div class="seccion-derechasup">
+    <div class="seccion-derechasup"><!-- subseccion -->
         <nav><!-- menu de navegación o conjunto de botones --> 
             <a href="index.html" target="_self"><button class="mi-boton">INICIO</button></a>
-            <a href="componentes.html" target="_self"><button class="mi-boton">COMPONENTES PRINCIPALES</button></a>
-            <a href="tecnicas.html" target="_self"><button class="mi-boton">TÉCNICAS APLICADAS</button></a>
-            <a href="tejidos.html" target="_self"><button class="mi-boton">TEJIDOS BIOIMPRESOS</button></a>
-            <a href="sectores.html" target="_self"><button class="mi-boton">SECTORES EN DESARROLLO</button></a> 
+            <div class="dropdown">
+                <button class="dropdown-btn"><a href="componentes.html" target="_self"><button class="mi-boton">COMPONENTES PRINCIPALES</button></a>
+                <div class="dropdown-content">
+                    <a href="componentes.html"target="_self">Bioimpresora 3D</a>
+                    <a href="componentes.html"target="_self">Biotinta</a>
+                    <a href="componentes.html"target="_self">Bioreactor</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn"><a href="tecnicas.html" target="_self"><button class="mi-boton">TÉCNICAS APLICADAS</button></a>
+                <div class="dropdown-content">
+                    <a href="tecnicas.html"target="_self">Extrusión</a>
+                    <a href="tecnicas.html" target="_self">Inkjet</a>
+                    <a href="tecnicas.html" target="_self">Laser</a>
+                    <a href="tecnicas.html" target="_self">Estereolitografía</a> 
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn"><a href="tejidos.html" target="_self"><button class="mi-boton">TEJIDOS BIOIMPRESOS</button></a>
+                <div class="dropdown-content">
+                    <a href="tejidos.html"target="_self">Cartilago</a>
+                    <a href="tejidos.html" target="_self">Hueso</a>
+                    <a href="tejidos.html" target="_self">Piel</a> 
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn"><a href="sectores.html" target="_self"><button class="mi-boton">SECTORES EN DESARROLLO</button></a> 
+                <div class="dropdown-content">
+                    <a href="sectores.html"target="_self">Ingeniería de tejidos</a>
+                    <a href="sectores.html" target="_self">Trasplantes</a>
+                    <a href="sectores.html" target="_self">Farmacéutica</a> 
+                    <a href="sectores.html" target="_self">Cancer</a> 
+                </div>
+            </div>
             <a href="referencias.html" target="_self"><button class="mi-boton">REFERENCIAS</button></a>
         </nav>
-    </div>
+     </div>
     <div class="seccion-derechainf"><!-- seccion derecha -->
         <div class="seccion-definicion"><!-- definicion -->
             <div class="definicion"><!-- texto de definicion -->
-                <h4><p class="desplazar">La bioimpresión es un campo emergente en la medicina regenerativa. Producir estructuras tridimensionales cargadas de células para imitar tejidos corporales tiene un papel importante no solo en la ingeniería de tejidos, sino también en la administración de fármacos y los estudios sobre el cáncer. La bioimpresión puede proporcionar geometría espacial específica para cada paciente, microestructuras controladas y la colocación de diferentes tipos celulares para la fabricación de andamios de ingeniería de tejidos. Actualmente se estan desarrollando diferentes técnicas de fabricación: bioimpresión basada en láser, basada en extrusión y basada en inyección de tinta.<!-- titular de mayor tamaño -->
+                <h4>
+                <p class="desplazar">La bioimpresión es un campo emergente en la medicina regenerativa. Producir estructuras tridimensionales cargadas de células para imitar tejidos corporales tiene un papel importante no solo en la ingeniería de tejidos, sino también en la administración de fármacos y los estudios sobre el cáncer. La bioimpresión puede proporcionar geometría espacial específica para cada paciente, microestructuras controladas y la colocación de diferentes tipos celulares para la fabricación de andamios de ingeniería de tejidos. Actualmente se estan desarrollando diferentes técnicas de fabricación: bioimpresión basada en láser, basada en extrusión y basada en inyección de tinta.<!-- titular de mayor tamaño -->
                 <br>
                 <br>
                 Existen diversas ventajas y desafíos en cada técnica, así como el estado actual de la investigación hacia diversos tipos de tejidos. Las técnicas basadas en boquillas, como la impresión por inyección de tinta y por extrusión, y las técnicas basadas en láser, como la estereolitografía y la bioimpresión asistida por láser, son capaces de producir andamios bioimpresos exitosos. Estas cuatro técnicas tienen efectos diversos en la viabilidad celular, la resolución y la fidelidad de impresión. Además, se descubrió que la elección de materiales y sus concentraciones también impactaban en las características de impresión. Cada técnica ha demostrado ventajas y desventajas individuales, y la investigación más reciente implica la combinación de múltiples técnicas para aprovechar las ventajas de cada una.</p></h4>   
                 <br>
-                <audio controls id="audio">
-                    <source src="bioaundio.mp3" type="audio/mp3">
-                    Tu navegador no soporta el elemento de audio.
-                  </audio>
             </div>
             </div>
     </div>
