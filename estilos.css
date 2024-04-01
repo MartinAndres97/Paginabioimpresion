@@ -718,7 +718,7 @@ h5 {
         bottom: -100%; /* Comienza desde abajo de la sección */
     }
     100% {
-        bottom: 45%; /* Se mueve hacia arriba, hasta la parte superior de la sección */
+        bottom: 60%; /* Se mueve hacia arriba, hasta la parte superior de la sección */
     }
 }
     .boton-final { 
@@ -881,7 +881,7 @@ h5 {
         bottom: -100%; /* Comienza desde abajo de la sección */
     }
     100% {
-        bottom: 45%; /* Se mueve hacia arriba, hasta la parte superior de la sección */
+        bottom: 60%; /* Se mueve hacia arriba, hasta la parte superior de la sección */
     }
 }
 .boton-final { 
