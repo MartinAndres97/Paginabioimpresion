@@ -64,7 +64,7 @@ body {
                     width: 5vw; /* Ancho de la imagen del botón */
                     height: 5vw; /* Altura de la imagen del boton */
                     background-image: url("menu.PNG"); /* Inserta imagen del boton */
-                    background-size: cover; /* Ajustar la imagen para cubrir el botón */
+                    background-size: contain; /* Ajustar la imagen para cubrir el botón */
                     background-color: none;
                     padding: 0px 0px;
                     border: none;
