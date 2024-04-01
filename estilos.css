@@ -822,11 +822,11 @@ h5 {
     height: 78vh; /* Altura de la ventana */
 }
 .imagenes {
-    width:20vw;
+    width:35vw;
     height:auto;
 }
 .imagenes2 {
-    width:30vw;
+    width:45vw;
     height:auto;
 }
 .imagenpag3 {
@@ -848,6 +848,9 @@ h5 {
         bottom: 5%; /* Se mueve hacia arriba, hasta la parte superior de la sección */
     }
 }
+.boton-final { 
+    font-size: 4vw;
+}  
     
 }
 @media only screen and (min-width: 1200px) and (max-width: 1300px) {
