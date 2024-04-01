@@ -61,8 +61,8 @@ body {
                 /* Estilos del botón */
                 .menu-btn {
                     position: sticky; /* Establece el posicionamiento fijo */
-                    width: 10vw; /* Ancho de la imagen del botón */
-                    height: 10vw; /* Altura de la imagen del boton */
+                    width: 5vw; /* Ancho de la imagen del botón */
+                    height: 5vw; /* Altura de la imagen del boton */
                     background-image: url("menu.PNG"); /* Inserta imagen del boton */
                     background-size: cover; /* Ajustar la imagen para cubrir el botón */
                     background-color: none;
@@ -131,7 +131,7 @@ body {
             width: 50vw; /* Ancho de la sección izquierdainf */
             height: 88vh; /* Altura de la ventana */
             margin: 0px; /* Ajustar el margen. */
-            background-color:rgb(190, 72, 170); /* Color de fondo para la sección izquierdainf */
+            background-color:rgb(190, 72, 170, 0); /* Color de fondo para la sección izquierdainf */
             display: flex;/* Utilizar un diseño de flexbox */
             justify-content: center; /* Centra horizontalmente */
             align-items: center; /* Centra verticalmente */
