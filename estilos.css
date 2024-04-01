@@ -760,7 +760,7 @@ h5 {
 }
 .menu-content a {
     color: black;
-    font-size: 3vw; /* Tamaño de fuente */
+    font-size: 6vw; /* Tamaño de fuente */
     padding: 5px 5px;
     font-weight: bold; 
     display: block;
