@@ -26,24 +26,29 @@ body {
     .contenedor { /* Contiene las cuatro subsecciones de la pagina */
         display: flex; /* Utilizar un diseño de flexbox */
         margin: 0;/* Elimina los márgenes predeterminados del contenedor */
+        background-color: #eb2c2c;
+        position: relative;
+        width: 100%;
+        height: 100%;
     }
     /* Contiene las seccion izquierda superior con una imagen que al seleccionarla lleva a la pagina de inicio */
     .seccion-izquierdasup {
-        position: fixed; /* Establece el posicionamiento fijado */
+        position: absolute; /* Establece el posicionamiento fijado */
         top: 0; /* Posiciona la sección en la parte superior */
         left: 0; /* Posiciona la sección en la izquierda */
         width: 15vw; /* Ancho de la sección izquierda */
-        height: 12vh; /* Altura igual a la altura de la ventana (viewport height) */
+        height: 13vh; /* Altura igual a la altura de la ventana (viewport height) */
         margin: 0;/* Elimina los márgenes predeterminados del contenedor */
         float: center; /* Para alinear al centro */
-        background-color:rgba(83, 243, 243, 0);/* Color de fondo para la sección izquierdasup */
+        background-color:rgb(0, 0, 0);/* Color de fondo para la sección izquierdasup */
+        
     }
     /* se genera un boton representado en un logo */
     .logo {
             text-align: center; /* Alinea el texto al centro */
-            position: relative; /* Establece el posicionamiento absoluto */
-            top: 0; /* Posiciona la sección en la parte superior */
-            right: 0; /* Posiciona la sección en la parte derecha */
+            position: absolute; /* Establece el posicionamiento absoluto */
+            top: 1.5vw ; /* Posiciona la sección en la parte superior */
+            left: 1.5vw; /* Posiciona la sección en la parte derecha */
         }
         /* se agrega una imagen al boton */
         .boton-imagen {
@@ -54,15 +59,12 @@ body {
             background-repeat: no-repeat;
             border: none; /* Sin borde */
             cursor: pointer; /* Cambiar cursor al pasar el ratón */
-            margin-right: 1.5vw; /* Margen derecho */
-            margin-top: 1.5vw; /* Margen superior */
-            
         }
                 /* Estilos del botón */
                 .menu-btn {
                     position: sticky; /* Establece el posicionamiento fijo */
-                    width: 5vw; /* Ancho de la imagen del botón */
-                    height: 5vw; /* Altura de la imagen del boton */
+                    width: 3vw; /* Ancho de la imagen del botón */
+                    height: 3vw; /* Altura de la imagen del boton */
                     background-image: url("menu.PNG"); /* Inserta imagen del boton */
                     background-size: contain; /* Ajustar la imagen para cubrir el botón */
                     background-color: none;
@@ -72,11 +74,11 @@ body {
         
                 }
                 .seccion-menu {
-                    position: fixed; /* Establece el posicionamiento fijado */
+                    position: relative; /* Establece el posicionamiento fijado */
                     top: 14vh; /* Posiciona la sección en la parte superior */
                     left: 5vh; /* Posiciona la sección en la izquierda */
-                    width: 5vw; /* Ancho de la sección izquierda */
-                    height: 5vw; /* Altura igual a la altura de la ventana (viewport height) */
+                    width: 3vw; /* Ancho de la sección izquierda */
+                    height: 3vw; /* Altura igual a la altura de la ventana (viewport height) */
                     margin: 0;/* Elimina los márgenes predeterminados del contenedor */
                     float: center; /* Para alinear al centro */
                     background-color:rgb(0, 0, 0);/* Color de fondo para la sección izquierdasup */
@@ -99,6 +101,7 @@ body {
                     min-width: 20vw;
                     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                     z-index: 1000;
+                    
                 }
                 .menu-content:hover {/* Cambia de color al pasar el cursor */
                     background-color: #9fd1f3; /* Cambiar color de fondo al pasar el ratón */
@@ -111,11 +114,14 @@ body {
                     padding: 12px 16px;
                     font-weight: bold; 
                     display: block;
+                    margin-top: 5px;
+                    padding: 1.5vw;
                 }
         
                 /* Cambiar color del enlace al pasar el mouse */
                 .menu-content a:hover {
                     background-color: #f1f1f1;
+                    padding: 20px 20px;
                 }
         
                 /* Mostrar el menú cuando se hace clic en el botón */
@@ -125,13 +131,13 @@ body {
 
         /* Contiene las seccion izquierda inferior con el titulo de la pagina principal */
         .seccion-izquierdainf {
-            position: fixed; /* Establece el posicionamiento fijado */
+            position: absolute; /* Establece el posicionamiento fijado */
             bottom: 0; /* Posiciona la sección en la parte superior */
             left: 0; /* Posiciona la sección en la izquierdainf */
-            width: 50vw; /* Ancho de la sección izquierdainf */
+            width: 45vw; /* Ancho de la sección izquierdainf */
             height: 88vh; /* Altura de la ventana */
             margin: 0px; /* Ajustar el margen. */
-            background-color:rgba(190, 72, 170, 0); /* Color de fondo para la sección izquierdainf */
+            background-color:rgb(190, 72, 170); /* Color de fondo para la sección izquierdainf */
             display: flex;/* Utilizar un diseño de flexbox */
             justify-content: center; /* Centra horizontalmente */
             align-items: center; /* Centra verticalmente */
@@ -161,7 +167,7 @@ body {
             background-color: #f0f0f0;
             border: 1px solid #ccc;
             border-radius: 5px;
-            padding: 5px;
+            padding: 1px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
             z-index: 9999;
           }
@@ -174,8 +180,8 @@ body {
             position: absolute;
             top: 10vh;
             left: 3vw;
-            width: 26.6vw; /* Adjust width as needed */
-            height: 15vw; /* Adjust height as needed */
+            width: 30 vw; /* Adjust width as needed */
+            height: auto; /* Adjust height as needed */
             overflow: hidden; /* Para recortar cualquier parte del gif que sobresalga del contenedor */
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -193,17 +199,16 @@ body {
             100% {
                 bottom: 27%; /* Se mueve hacia arriba, hasta la parte superior de la sección */
             }
-        
         }
         /* Contiene las seccion derecha inferior con el menu de botones */
         .seccion-derechasup {
-            position: fixed; /* Establece el posicionamiento fijado */
+            position: absolute; /* Establece el posicionamiento fijado */
             top: 0; /* Posiciona la sección en la parte superior */
             right: 0; /* Posiciona la sección en la derecha*/
             width: 83.7vw; /* Ancho de la sección derecha.*/
             height: 12vh; /* Altura de la ventana. */
             margin-right: 1.3vw; /* Ajustar el margen derecho según sea necesario */
-            background-color: rgba(243, 168, 83, 0); /* Color de fondo para la sección derecha */
+            background-color: rgb(243, 168, 83); /* Color de fondo para la sección derecha */
             z-index: 9999;/* Envia al frente el elemento */
         }
         .mi-boton { /* Boton menu principal*/
@@ -227,38 +232,25 @@ body {
         .mi-boton:hover {/* Cambia de color al pasar el cursor */
             background-color: #6db6e7; /* Cambiar color de fondo al pasar el ratón */
         } 
-        .menu-vertical {
-            position: absolute; /* Establecer posición absoluta */
-            top: 25vh; /* Posición desde la parte superior */
-            left: 25vw; /* Posición desde el lado izquierdo */
-            z-index: 999; /* Valor alto para colocar el menú sobre otros elementos */
-        }
-        
-    
-         
         .seccion-derechainf {
-            position: fixed; /* Establece el posicionamiento fijado */
+            position: absolute; /* Establece el posicionamiento fijado */
             bottom: 0; /* Posiciona la sección en la parte inferior */
             right: 0; /* Posiciona la sección en la derecha */
-            width: 50vw; /* Ancho de la sección derecha (100% del ancho de la pantalla menos el ancho de la sección izquierda) */
+            width: 55vw; /* Ancho de la sección derecha (100% del ancho de la pantalla menos el ancho de la sección izquierda) */
             margin: 0px; /* Ajustar el margen izquierdo según sea necesario */
-            background-color: rgba(39, 48, 102, 0); /* Color de fondo para la sección derecha */
+            background-color: rgb(39, 48, 102); /* Color de fondo para la sección derecha */
             height: 88vh; /* Permitir que el contenedor crezca según sea necesario */
             
         }
         .seccion-definicion {
-            position: fixed; /* Establece el posicionamiento fijado */
-            bottom: 0; /* Posiciona la sección en la parte inferior */
-            right: 0; /* Posiciona la sección en la derecha */
-            top: 20vh; /* Posiciona la sección en la parte superior */
-            left: 45vw; /* Posiciona la sección en la izquierda */
+            position: absolute; /* Establece el posicionamiento fijado */
             width: 50vw; /* Ancho de la sección derecha (100% del ancho de la pantalla menos el ancho de la sección izquierda) */
             height: 70vh; /* Altura igual a la altura de la ventana (viewport height) */
             margin-top: 0px; /* Ajustar el margen izquierdo según sea necesario */
             margin-left: 0px;/* Márgen especifica */
             margin-bottom: 15vh;/* Márgen especifica */
             margin-right: 4vw;/* Márgen especifica */
-            background-color: rgba(0, 0, 0, 0.85); /* Color de fondo para la sección derecha */
+            background-color: rgba(130, 24, 216, 0.85); /* Color de fondo para la sección derecha */
             z-index: 3;
         
         }
@@ -267,7 +259,8 @@ body {
             animation: centrar 2s 1 forwards; /* Nombre de la animación, duración, y repeticiones */
             width: 100%;/* Define el ancho */
             height: 100vh;/* Define el alto */
-            position: relative;/* Establece el posicionamiento relativo */
+            position: absolute;/* Establece el posicionamiento relativo */
+            top: 4vw;
             overflow: hidden; /* Para ocultar el texto que se desplazará fuera de los límites */     
         }
         .desplazar {
@@ -302,23 +295,8 @@ body {
     
     }
     .dropdown-btn { /* Boton menu principal*/
-        background-color: #3a2b2d00; /* Color de fondo */
         border: none; /* Sin borde */
-        color: white; /* Color del texto */
         padding: 0 0; /* Relleno */
-        text-align: center; /* Alineación del texto */
-        text-decoration: none; /* Sin decoración de texto */
-        display: inline-block; /* Visualización como bloque en línea */
-        font-size: 0.5vw; /* Tamaño de fuente */
-        font-weight: bold;/* tipo de estilo */
-        margin: 0 0; /* Márgenes */
-        cursor: pointer; /* Cambiar cursor al pasar el ratón */
-        border-radius: 0; /* Bordes redondeados */
-        margin-right: 0; /* Márgen especifica */
-        margin-top: 0;/* Márgen especifica */
-    } 
-    .dropdown-btn:hover {/* Cambia de color al pasar el cursor */
-        background-color: #6db6e7; /* Cambiar color de fondo al pasar el ratón */
     } 
     /* Estilos del contenedor del menú */
     .dropdown {
@@ -343,6 +321,7 @@ body {
         color: rgb(0, 0, 0);
         font-size: 1vw; /* Tamaño de fuente */
         padding: 12px 16px;
+        margin-top: 0.5vw;
         text-decoration: none;
         display: block;
     }
@@ -357,14 +336,14 @@ body {
         display: block;
     }      
    .seccion-derecha {
-        position: fixed; /* Establece el posicionamiento fijado */
+        position: absolute; /* Establece el posicionamiento fijado */
         bottom: 0; /* Posiciona la sección en la parte inferior */
         right: 0; /* Posiciona la sección en la derecha */
         top: 0; /* Posiciona la sección en la parte superior */
         right: 0; /* Posiciona la sección en la izquierda */
         width: 70vw; /* Ancho de la sección derecha  */
         height: 100vh; /* Altura igual a la altura de la ventana (viewport height) */
-        background-color: rgba(243, 247, 4, 0); /* Color de fondo para la sección derecha */
+        background-color: rgb(243, 247, 4); /* Color de fondo para la sección derecha */
         overflow-y: auto; /* Agrega desplazamiento vertical */
         z-index: 3;/* Nivel de posicionamiento*/
     }
@@ -397,22 +376,22 @@ body {
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Añade un sombreado */
     }
     .imagenes {
-        position: flex;
+        position: relative;
         float: left;
         top: 0;
         box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
-        margin-right: 5vw;
+        margin-right: 3vw;
         margin-bottom: 1vw;
         margin-left: 0;
         width:25vw;
         height:auto;
     }
     .imagenes2 {
-        position: flex;
+        position: relative;
         float: left;
         top: 0;
         box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
-        margin-right: 5vw;
+        margin-right: 3vw;
         margin-bottom: 1vw;
         margin-left: 0.5vw;
         width:35vw;
@@ -421,19 +400,19 @@ body {
 
         
     .seccion-izquierda {
-        position: fixed; /* Establece el posicionamiento fijado */
+        position: absolute; /* Establece el posicionamiento fijado */
         bottom: 0; /* Posiciona la sección en la parte superior */
         left: 0; /* Posiciona la sección en la izquierda */
         width: 30vw; /* Ancho de la sección izquierda */
         height: 88vh; /* Altura de la ventana */
         margin: 0px; /* Ajustar el margenrd según sea necesario */
-        background-color:rgba(252, 2, 2, 0); /* Color de fondo para la sección izquierda */
+        background-color:rgb(2, 252, 44); /* Color de fondo para la sección izquierda */
         display: flex; /* Utilizar un diseño de flexbox */
         justify-content: center; /* Centra horizontalmente */
         align-items: center; /* Centra verticalmente */
     }
     .contenido {
-        margin-top: 15vh; /* Ajusta según la altura de la sección 2 */
+        margin-top: 1vh; /* Ajusta según la altura de la sección 2 */
     }   
 
     .boton-final {
@@ -577,6 +556,9 @@ a:hover {
     .boton-imagen {
         display: none; /* Ocultar el menú en dispositivos móviles */
     }
+    .seccion-derechasup {
+        display: none; /* Ocultar el menú en dispositivos móviles */
+    }   
     .seccion-menu {
         width: 10vw; /* Ancho fijo del botón */
         height: 10vw; /* Altura fija del botón */
@@ -591,7 +573,7 @@ a:hover {
 
 .seccion-derechainf {
     width: 100vw; /* Ancho de la sección derecha (100% del ancho de la pantalla menos el ancho de la sección izquierda) */
-    height: 80vh; /* Permitir que el contenedor crezca según sea necesario */
+    height: 100vh; /* Permitir que el contenedor crezca según sea necesario */
 }
 .seccion-izquierdainf {
     width: 100vw; /* Ancho fijo del botón */
@@ -615,14 +597,14 @@ a:hover {
 
 }
 #video {
-    width: 53.4vw; /* Adjust width as needed */
-    height: 30vw; /* Adjust height as needed */
+    width: 60vw; /* Adjust width as needed */
+    height: auto /* Adjust height as needed */
   }
 .menu-content {
     min-width: 80vw;
     min-height: auto;
     z-index: 9999;
-    padding: 10px 10px; /* Relleno */
+    padding: 20px 20px; /* Relleno */
 }
 .mi-boton {
     display: none; /* Ocultar el menú en dispositivos móviles */
@@ -637,7 +619,7 @@ a:hover {
 .menu-content a {
     color: black;
     font-size: 3vw; /* Tamaño de fuente */
-    padding: 5px 5px;
+    padding: 15px 15px;
     font-weight: bold; 
     display: block;
 }
@@ -673,26 +655,32 @@ h5 {
     position: absolute; 
     top: 0;
     left: 0;
-    z-index: 9997;
 }
 .seccion-contenido {
     position: fixed; /* Establece el posicionamiento fijado */
     bottom: 0; /* Posiciona la sección en la parte inferior */
     right: 0; /* Posiciona la sección en la derecha */
-    top: 15vh; /* Posiciona la sección en la parte superior */
+    top: 12; /* Posiciona la sección en la parte superior */
     left: 0; /* Posiciona la sección en la izquierda */
     width: 98vw; /* Ancho de la sección derecha*/
-    height: 78vh; /* Altura de la ventana */
+    height: 76vh; /* Altura de la ventana */
 }
 .seccion-derecha {
-    position: fixed; /* Establece el posicionamiento fijado */
+    position: relative; /* Establece el posicionamiento fijado */
+    bottom: 0; /* Posiciona la sección en la parte inferior */
+    right: 0; /* Posiciona la sección en la derecha */
+    top: 0; /* Posiciona la sección en la parte superior */
+    left: 0; /* Posiciona la sección en la izquierda */
+    width: 100vw; /* Ancho de la sección derecha*/
+    height: 90vh; /* Altura de la ventana */
+    z-index: 9997;
+}
+.contenido {
+    position: absolute; /* Establece el posicionamiento fijado */
     bottom: 0; /* Posiciona la sección en la parte inferior */
     right: 0; /* Posiciona la sección en la derecha */
     top: 12vh; /* Posiciona la sección en la parte superior */
     left: 0; /* Posiciona la sección en la izquierda */
-    width: 100vw; /* Ancho de la sección derecha*/
-    height: 84vh; /* Altura de la ventana */
-    z-index: 9998;
 }
 #video {
     width: 75vw; /* Adjust width as needed */
@@ -711,10 +699,10 @@ h5 {
     height: auto; /* Altura automática para mantener la proporción original */
 }   
 .gif-container {
-    width: 26.6vw; /* Adjust width as needed */
-    height: 15vw; /* Adjust height as needed */
+    width: 20vw; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
     position: absolute;
-    top: 8vh;
+    top: 5vh;
     left: 68vw;
   }
 @keyframes ascender {
@@ -734,6 +722,9 @@ h5 {
     .boton-imagen {
         display: none; /* Ocultar el menú en dispositivos móviles */
     }
+    .seccion-derechasup {
+        display: none; /* Ocultar el menú en dispositivos móviles */
+    }  
     .seccion-menu {
         width: 10vw; /* Ancho fijo del botón */
         height: 10vw; /* Altura fija del botón */
@@ -748,7 +739,7 @@ h5 {
 
 .seccion-derechainf {
     width: 100vw; /* Ancho de la sección derecha (100% del ancho de la pantalla menos el ancho de la sección izquierda) */
-    height: 80vh; /* Permitir que el contenedor crezca según sea necesario */
+    height: 100vh; /* Permitir que el contenedor crezca según sea necesario */
 }
 .seccion-izquierdainf {
     width: 100vw; /* Ancho fijo del botón */
@@ -759,7 +750,7 @@ h5 {
 }
 
 .seccion-definicion {
-    position: fixed; /* Establece el posicionamiento fijado */
+    position: absolute; /* Establece el posicionamiento fijado */
     bottom: 0; /* Posiciona la sección en la parte inferior */
     right: 0; /* Posiciona la sección en la derecha */
     top: 35vh; /* Posiciona la sección en la parte superior */
@@ -771,7 +762,7 @@ h5 {
 
 }
 #video {
-    width: 75vw; /* Adjust width as needed */
+    width: 65vw; /* Adjust width as needed */
     height: auto; /* Adjust height as needed */
   }
 .menu-content {
@@ -792,8 +783,8 @@ h5 {
 }
 .menu-content a {
     color: black;
-    font-size: 6vw; /* Tamaño de fuente */
-    padding: 5px 5px;
+    font-size: 4vw; /* Tamaño de fuente */
+    padding: 15px 15px;
     font-weight: bold; 
     display: block;
 }
@@ -835,31 +826,35 @@ h5 {
     position: absolute; 
     top: 0;
     left: 0;
-    z-index: 9997;
+    z-index: 9998;
 }
 .seccion-contenido {
     position: fixed; /* Establece el posicionamiento fijado */
     bottom: 0; /* Posiciona la sección en la parte inferior */
     right: 0; /* Posiciona la sección en la derecha */
-    top: 15vh; /* Posiciona la sección en la parte superior */
+    top: 12vh; /* Posiciona la sección en la parte superior */
     left: 0; /* Posiciona la sección en la izquierda */
     width: 98vw; /* Ancho de la sección derecha*/
-    height: 78vh; /* Altura de la ventana */
+    height: 76vh; /* Altura de la ventana */
 
 }
 .seccion-derecha {
-    position: fixed; /* Establece el posicionamiento fijado */
+    position: relative; /* Establece el posicionamiento fijado */
+    bottom: 0; /* Posiciona la sección en la parte inferior */
+    right: 0; /* Posiciona la sección en la derecha */
+    top: 0; /* Posiciona la sección en la parte superior */
+    left: 0; /* Posiciona la sección en la izquierda */
+    width: 100vw; /* Ancho de la sección derecha*/
+    height: 88vh; /* Altura de la ventana */
+    z-index: 9997;
+}
+.contenido {
+    position: absolute; /* Establece el posicionamiento fijado */
     bottom: 0; /* Posiciona la sección en la parte inferior */
     right: 0; /* Posiciona la sección en la derecha */
     top: 12vh; /* Posiciona la sección en la parte superior */
     left: 0; /* Posiciona la sección en la izquierda */
-    width: 100vw; /* Ancho de la sección derecha*/
-    height: 78vh; /* Altura de la ventana */
-    z-index: 9998;
 }
-.seccion-derecha:hover + .seccion-izquierda {
-    opacity: 0; /* Hacer que la sección superior desaparezca cuando el mouse pase sobre la sección inferior */
-  }
 .imagenes {
     width:35vw;
     height:auto;
