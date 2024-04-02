@@ -26,7 +26,7 @@ body {
     .contenedor { /* Contiene las cuatro subsecciones de la pagina */
         display: flex; /* Utilizar un diseño de flexbox */
         margin: 0;/* Elimina los márgenes predeterminados del contenedor */
-        background-color: #eb2c2c;
+        background-color: #eb2c2c00;
         position: relative;
         width: 100%;
         height: 100%;
@@ -40,7 +40,7 @@ body {
         height: 13vh; /* Altura igual a la altura de la ventana (viewport height) */
         margin: 0;/* Elimina los márgenes predeterminados del contenedor */
         float: center; /* Para alinear al centro */
-        background-color:rgb(0, 0, 0);/* Color de fondo para la sección izquierdasup */
+        background-color:rgba(0, 0, 0, 0);/* Color de fondo para la sección izquierdasup */
         
     }
     /* se genera un boton representado en un logo */
@@ -81,7 +81,7 @@ body {
                     height: 3vw; /* Altura igual a la altura de la ventana (viewport height) */
                     margin: 0;/* Elimina los márgenes predeterminados del contenedor */
                     float: center; /* Para alinear al centro */
-                    background-color:rgb(0, 0, 0);/* Color de fondo para la sección izquierdasup */
+                    background-color:rgba(0, 0, 0, 0);/* Color de fondo para la sección izquierdasup */
                     z-index: 9999;
                 }
                 /* Estilos del contenedor del menú */
@@ -137,7 +137,7 @@ body {
             width: 45vw; /* Ancho de la sección izquierdainf */
             height: 88vh; /* Altura de la ventana */
             margin: 0px; /* Ajustar el margen. */
-            background-color:rgb(190, 72, 170); /* Color de fondo para la sección izquierdainf */
+            background-color:rgba(190, 72, 170, 0); /* Color de fondo para la sección izquierdainf */
             display: flex;/* Utilizar un diseño de flexbox */
             justify-content: center; /* Centra horizontalmente */
             align-items: center; /* Centra verticalmente */
@@ -208,7 +208,7 @@ body {
             width: 83.7vw; /* Ancho de la sección derecha.*/
             height: 12vh; /* Altura de la ventana. */
             margin-right: 1.3vw; /* Ajustar el margen derecho según sea necesario */
-            background-color: rgb(243, 168, 83); /* Color de fondo para la sección derecha */
+            background-color: rgba(243, 168, 83, 0); /* Color de fondo para la sección derecha */
             z-index: 9999;/* Envia al frente el elemento */
         }
         .mi-boton { /* Boton menu principal*/
@@ -238,19 +238,20 @@ body {
             right: 0; /* Posiciona la sección en la derecha */
             width: 55vw; /* Ancho de la sección derecha (100% del ancho de la pantalla menos el ancho de la sección izquierda) */
             margin: 0px; /* Ajustar el margen izquierdo según sea necesario */
-            background-color: rgb(39, 48, 102); /* Color de fondo para la sección derecha */
+            background-color: rgba(39, 48, 102, 0); /* Color de fondo para la sección derecha */
             height: 88vh; /* Permitir que el contenedor crezca según sea necesario */
             
         }
         .seccion-definicion {
             position: absolute; /* Establece el posicionamiento fijado */
+            top: 4vw;
             width: 50vw; /* Ancho de la sección derecha (100% del ancho de la pantalla menos el ancho de la sección izquierda) */
             height: 70vh; /* Altura igual a la altura de la ventana (viewport height) */
             margin-top: 0px; /* Ajustar el margen izquierdo según sea necesario */
             margin-left: 0px;/* Márgen especifica */
             margin-bottom: 15vh;/* Márgen especifica */
             margin-right: 4vw;/* Márgen especifica */
-            background-color: rgba(130, 24, 216, 0.85); /* Color de fondo para la sección derecha */
+            background-color: rgba(0, 0, 0, 0.85); /* Color de fondo para la sección derecha */
             z-index: 3;
         
         }
@@ -260,7 +261,7 @@ body {
             width: 100%;/* Define el ancho */
             height: 100vh;/* Define el alto */
             position: absolute;/* Establece el posicionamiento relativo */
-            top: 4vw;
+            top: 1vw;
             overflow: hidden; /* Para ocultar el texto que se desplazará fuera de los límites */     
         }
         .desplazar {
@@ -343,7 +344,7 @@ body {
         right: 0; /* Posiciona la sección en la izquierda */
         width: 70vw; /* Ancho de la sección derecha  */
         height: 100vh; /* Altura igual a la altura de la ventana (viewport height) */
-        background-color: rgb(243, 247, 4); /* Color de fondo para la sección derecha */
+        background-color: rgba(243, 247, 4, 0); /* Color de fondo para la sección derecha */
         overflow-y: auto; /* Agrega desplazamiento vertical */
         z-index: 3;/* Nivel de posicionamiento*/
     }
@@ -361,6 +362,14 @@ body {
         margin-right: 4vw;/* Ajustar el margen derecho según sea necesario */
         background-color: rgba(0, 0, 0, 0.404); /* Color de fondo para la sección derecha */
         z-index: -1;/* Envia atras */
+    }
+    .contenido {
+        position: absolute; /* Establece el posicionamiento fijado */
+        bottom: 0; /* Posiciona la sección en la parte inferior */
+        right: 0; /* Posiciona la sección en la derecha */
+        top: 12vh; /* Posiciona la sección en la parte superior */
+        left: 0; /* Posiciona la sección en la izquierda */
+        margin-top: 1vh; /* Ajusta según la altura de la sección 2 */
     }
     .imagenpag3 {
         
@@ -406,14 +415,11 @@ body {
         width: 30vw; /* Ancho de la sección izquierda */
         height: 88vh; /* Altura de la ventana */
         margin: 0px; /* Ajustar el margenrd según sea necesario */
-        background-color:rgb(2, 252, 44); /* Color de fondo para la sección izquierda */
+        background-color:rgba(2, 252, 44, 0); /* Color de fondo para la sección izquierda */
         display: flex; /* Utilizar un diseño de flexbox */
         justify-content: center; /* Centra horizontalmente */
         align-items: center; /* Centra verticalmente */
     }
-    .contenido {
-        margin-top: 1vh; /* Ajusta según la altura de la sección 2 */
-    }   
 
     .boton-final {
         margin-top: auto; /* Mover el botón hacia abajo (al final de la página) */
