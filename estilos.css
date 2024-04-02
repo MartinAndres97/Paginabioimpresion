@@ -575,6 +575,7 @@ a:hover {
     .menu-btn {
         width: 10vw; /* Ancho de la imagen del botón */
         height: 10vw; /* Altura de la imagen del boton */
+        border: 2px solid #000;
     }
 
 .seccion-derechainf {
@@ -661,6 +662,7 @@ h5 {
     position: absolute; 
     top: 0;
     left: 0;
+    background-color: #042a5d;
 }
 .seccion-contenido {
     position: fixed; /* Establece el posicionamiento fijado */
@@ -741,6 +743,7 @@ h5 {
     .menu-btn {
         width: 10vw; /* Ancho de la imagen del botón */
         height: 10vw; /* Altura de la imagen del boton */
+        border: 2px solid #000;
     }
 
 .seccion-derechainf {
@@ -833,6 +836,7 @@ h5 {
     top: 0;
     left: 0;
     z-index: 9998;
+    background-color: #042a5d;
 }
 .seccion-contenido {
     position: fixed; /* Establece el posicionamiento fijado */
